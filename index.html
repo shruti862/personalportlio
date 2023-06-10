@@ -4,65 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css1/style.css">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/9483b65bea.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-   <div class="container">
-    <nav>
-        <h2 class="logo">Portfo<span>lio</span> 
-            </h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        <a href="#" class="btn">Subscribe</a>
-        
-    </nav>
-   </div> 
-   <div class="content">
-    <h4>Hello, my name is</h4>
-    <h1>Shruti Yadav</h1>
-    <h3>I'm learning web development</h3>
-    <h2>My keen interest</h2>
-    <ul>
-        <li>Loves to code</li>
-        <li>Solving java and DSA problems</li>
-        <li>Watching thriller movies</li>
-        <li>Loves to explore new places</li>
-        <li>Wanna be full stack developer</li>
-        <li>love to play chess in free time</li>
-    </ul>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">Portfo<span>lio</span> 
+                </h2>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                       <li> <a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+           
+            <div class="header-text">
+                <p> Learning Web Development</p>
+                
+                <h1>Hi,I'm <span>Shruti </span>Yadav </h1>
+
+            </div>
+            
+        </div>
     </div>
-    <div class="button">
-       <h2>Insights about me</h2>
-      <p class="about"> 
-       I am responsible for my own happiness. My opinion of me is more important than other's opinion of me. Believes in manifestations. I look for positivity in all things. I am tough person who has made it through tough times.I am making a difference.
-      </p>
-   </div>
-   <footer>
-    <div class="boxx"><img src="./img/linkedin.png" alt="">
-    <p>https://www.linkedin.com/in/shruti-yadav-a66015266</p></div>
-    <span class="box"><img src="./img/gmail.png" alt="">
-    <p class="id"> shruti.yadav.che22@itbhu.ac.in</p></span>
-    <div class="glass">
-        <img src="./img/tele.png" alt="">
-        <p class="tt">t.me/Shruti8622</p>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./img1/she.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am responsible for my own happiness. My opinion of me is more important than other's opinion of me. Believes in manifestations. I look for positivity in all things. I am tough person who has made it through tough times.I am making a difference.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('interests')">Interests</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="interests">
+                        <ul>
+                            <li>Loves to code</li>
+                            <li> <span>Solving java and DSA problems</span></li>
+                            <li>Watching thriller movies</li>
+                            <li><span>Loves to explore new places</span></li>
+                            <li>love to play chess in free time</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>C Language</li>
+                            <li><span>Java Language</span></li>
+                            <li>HTML</li>
+                            <li><span>CSS</span></li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Did 10th and 12th from CBSE Board</li>
+                            <li><span>Doing Btech From IIT BHU college</span></li>
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
         </div>
-        <div class="glas">
-        <img src="./img/insta.jpeg" alt="">
-        <p class="ii">_Shruti_862</p>
-        </div>
-        <div class="br">
-         Let's Chat
-        </div>
-</footer>
+    </div>
+
+  
+    </div>
+    <!------------------    contact--------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>shruti.yadav.che22@itbhu.ac.in</p>
+                    <p><i class="fa-brands fa-linkedin"></i>shruti-yadav-a66015266</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+            <div class="contact-right">
+                <form>
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+             </div>
+         </div>
+    </div>
+    <div class="date">
+
+    </div>
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-limks");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
 </body>
 </html>
+    
