@@ -99,15 +99,14 @@
                    <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="submit" class="btn btn2" onclick="displayDate()">Submit</button>
+                    <p id="showDate"></p>
                 </form>
              </div>
          </div>
     </div>
-    <div class="date">
-
-    </div>
 </div>
+
     <script>
         var tablinks=document.getElementsByClassName("tab-limks");
         var tabcontents=document.getElementsByClassName("tab-contents");
@@ -121,7 +120,10 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-        
+        function displayDate(){
+            document.getElementById("showDate").innerHTML=Date();
+
+        }
     </script>
 </body>
 </html>
